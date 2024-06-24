@@ -57,7 +57,7 @@ The replyTo field in the frame part of an I4.0 message indicates ALP of the rece
 This repository hosts the source code for RIC architecture, 
 
 :one: The  code is written in Python 3.7 <br />
-:two: All the Python dependencies are specified in the [requirements.txt](https://github.com/harishpakala/VWS_AAS_Registry/blob/main/requirements.txt) <br />
+:two: All the Python dependencies are specified in the [requirements.txt](https://github.com/harishpakala/RIC/blob/main/requirements.txt) <br />
 :three: AAS descriptors are represented in JSON format as specified in [AAS Detail Part 2](https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part_2_V1.html), a new Json schema definition is created in accordance with  the AAS meta  model as specified in [AAS Detail Part 1](https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part1_V3.html). The registration and modification requests are validated using this json schema.  <br />
 :four: An external MQTT server is needed as part of MQTT plugin of the RIC.  <br />
 :five: The LIA OVGU development uses eclipse editor, accordingly eclipse related project files are provided in the repository.
@@ -113,11 +113,11 @@ The MQTT client component of the RIC subscibes to the topic *AASpillarbox**. The
 The python project maintains a logger, all the important aspects regarding its functionality  are captured with logger. The entire log information is stored into .LOG files under the src &gt; main &gt; logs folder, in case of docker under logs (the log files will also be mapped to the host system, related mapping information is provided in the docker-compose.yml file).
 
 ## Issues
-If you want to request new features or report bug [submit a new issue](https://github.com/admin-shell-io/python-aas-registry/issues/new)
+If you want to request new features or report bug [submit a new issue](https://github.com/harishpakala/RIC/issues/new)
 
 ## License
 
-Python AAS Registry is Licensed under Apache 2.0, the complete license text including the copy rights is included under [License.txt](https://github.com/admin-shell-io/python-aas-registry/blob/main/LICENSE.txt)
+Python AAS Registry is Licensed under Apache 2.0, the complete license text including the copy rights is included under [License.txt](https://github.com/harishpakala/RIC/blob/main/LICENSE.txt)
 
 * APScheduler,python-snap7,jsonschema,aiocoap,hbmqtt MIT License <br />
 * Flask,werkzeug, Flask-RESTful, python-dotenv BSD-3-Clause <br />
